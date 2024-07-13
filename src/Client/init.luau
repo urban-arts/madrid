@@ -7,6 +7,10 @@
 local EngineTypes = require(script.Parent.Shared.EngineTypes)
 local ClientRunner = require(script.ClientRunner)
 
-return {
+--- @class ClientFramework
+--- @field ClientRunner ClientRunner
+local ClientFramework = {
     ClientRunner = ClientRunner
 } :: EngineTypes.ClientFramework
+
+return ClientFramework

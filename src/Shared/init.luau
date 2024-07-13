@@ -6,6 +6,10 @@
 
 local EngineTypes = require(script.EngineTypes)
 
-return {
+--- @class SharedFramework
+--- @field EngineTypes table The engine types module
+local SharedFramework = {
     EngineTypes = EngineTypes,
 } :: EngineTypes.SharedFramework
+
+return SharedFramework

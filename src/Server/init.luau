@@ -7,6 +7,10 @@
 local EngineTypes = require(script.Parent.Shared.EngineTypes)
 local ServerRunner = require(script.ServerRunner)
 
-return {
+--- @class ServerFramework
+--- @field ServerRunner ServerRunner
+local ServerFramework = {
     ServerRunner = ServerRunner
 } :: EngineTypes.ServerFramework
+
+return ServerFramework
